@@ -1,0 +1,42 @@
+.header {
+    background: linear-gradient(to right, #682280, #A626D3);
+    padding: 16px 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+}
+
+.logoTitle {
+    color: white;
+    margin: 0;
+    margin-left: 1rem;
+    font-size: 1rem;
+
+}
+
+.headerDesc {
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .header {
+        padding: 20px 10%;
+    }
+
+    .logo {
+        width: 60px;
+    }
+    
+    .logoTitle {
+        font-size: 2rem;
+        margin-left: 2rem;
+    }
+}
