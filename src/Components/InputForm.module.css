@@ -35,6 +35,7 @@
     color: white;
     border-radius: 8px;
     margin-top: 1rem;
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {
