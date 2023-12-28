@@ -4,12 +4,14 @@ import './index.css';
 import Header from './Components/Header';
 import InputForm from './Components/InputForm';
 import reportWebVitals from './reportWebVitals';
+import ImageContainer from './Components/ImageContainer';
+import memes from "./memes";
+import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Header />
-    <InputForm />
+    <App />
   </React.StrictMode>
 );
 

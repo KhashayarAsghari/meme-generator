@@ -1,7 +1,15 @@
 import React from "react";
 import styles from "./InputForm.module.css";
+import memes from "../memes";
 
-export default function InputForm() {
+export default function InputForm(props) {
+
+    function randomMeme() {
+        const memesArray = memes.data.memes;
+        let randomNum = Math.floor(Math.random()*memesArray.length);
+        console.log(memesArray[randomNum]);
+    }
+
     return (
         <form className={styles.form} action="#">
             <div className={styles.form__inputsContainer}>
@@ -25,7 +33,12 @@ export default function InputForm() {
                     />
             </div>
 
-            <input type="submit" value="Get a new meme image" className={styles.form__submit}/>
+            <input 
+                type="submit" 
+                value="Get a new meme image" 
+                className={styles.form__submit}
+                onClick={props.onClickFunction}
+                />
         </form>
     )
 }
